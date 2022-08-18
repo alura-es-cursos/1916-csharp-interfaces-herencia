@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LhxoBSAevE9jaTzymnv0U+bPJiHAvdmOyGeFX427cAthHYXXxIuilrLUD7xOu96OC/P273Tf4JMP/DB9WbptYg==",
+  "dgSpecHash": "F5Q+JAXOzhu3ju62e4rGY77ZrAT+CEtQcr49+gen9PqpBewxmtnw+qS3zC/Sakk/A8qzH0amYXIePrd2LQ1Esw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ljcl7\\Documents\\alura\\1916\\Aula1ByteBank_ADM\\ByteBank_ADM\\ByteBank_ADM.csproj",
+  "projectFilePath": "C:\\CursoCSharp2\\ByteBank_ADM\\ByteBank_ADM\\ByteBank_ADM.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

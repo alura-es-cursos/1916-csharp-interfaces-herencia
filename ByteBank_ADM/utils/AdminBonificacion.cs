@@ -17,11 +17,6 @@ namespace ByteBank_ADM.utils
             this.totalBonificaciones += empleado.obtenerBonificacion();
         }
 
-        public void Registrar(Director director)
-        {
-            this.totalBonificaciones += director.obtenerBonificacion();
-        }
-
         public double obtenerTotalBonificaciones()
         {
             return this.totalBonificaciones;

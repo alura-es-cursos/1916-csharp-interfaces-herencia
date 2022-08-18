@@ -20,7 +20,7 @@ namespace ByteBank_ADM.Empleados
 
        //private int Tipo { get; set; }
 
-        public double obtenerBonificacion()
+        public virtual double obtenerBonificacion()
         {
             return this.Salario * 0.1;
         }

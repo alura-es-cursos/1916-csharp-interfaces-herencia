@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ljcl7\\Documents\\alura\\1916\\Aula1ByteBank_ADM\\ByteBank_ADM\\ByteBank_ADM.csproj": {}
+    "C:\\CursoCSharp2\\ByteBank_ADM\\ByteBank_ADM\\ByteBank_ADM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ljcl7\\Documents\\alura\\1916\\Aula1ByteBank_ADM\\ByteBank_ADM\\ByteBank_ADM.csproj": {
+    "C:\\CursoCSharp2\\ByteBank_ADM\\ByteBank_ADM\\ByteBank_ADM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ljcl7\\Documents\\alura\\1916\\Aula1ByteBank_ADM\\ByteBank_ADM\\ByteBank_ADM.csproj",
+        "projectUniqueName": "C:\\CursoCSharp2\\ByteBank_ADM\\ByteBank_ADM\\ByteBank_ADM.csproj",
         "projectName": "ByteBank_ADM",
-        "projectPath": "C:\\Users\\ljcl7\\Documents\\alura\\1916\\Aula1ByteBank_ADM\\ByteBank_ADM\\ByteBank_ADM.csproj",
+        "projectPath": "C:\\CursoCSharp2\\ByteBank_ADM\\ByteBank_ADM\\ByteBank_ADM.csproj",
         "packagesPath": "C:\\Users\\ljcl7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ljcl7\\Documents\\alura\\1916\\Aula1ByteBank_ADM\\ByteBank_ADM\\obj\\",
+        "outputPath": "C:\\CursoCSharp2\\ByteBank_ADM\\ByteBank_ADM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ljcl7\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,8 +45,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -55,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
