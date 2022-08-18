@@ -9,17 +9,22 @@ namespace ByteBank_ADM.Directores
 {
     public class Director:Empleado
     {
-        public Director()
+        public Director(string _Dni):base(_Dni, 50000)
         {
-            
+            Console.WriteLine("Constructor Director");
         }
         
         public string Departamento { get; set; }
 
         public override double obtenerBonificacion()
         {
-            return this.Salario * 0.35 + base.obtenerBonificacion();
+            return this.Salario * 0.50;
 
+        }
+
+        public override void aumentarSalario()
+        {
+            this.Salario *= 1.05;
         }
     }
 }

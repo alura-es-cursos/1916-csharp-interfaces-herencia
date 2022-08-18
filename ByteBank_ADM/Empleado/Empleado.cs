@@ -7,22 +7,29 @@ using System.Threading.Tasks;
 
 namespace ByteBank_ADM.Empleados
 {
-    public class Empleado
+    public abstract class Empleado
     {
-        public Empleado()
+        public Empleado(string _Dni, double _Salario)
         {
-            
+            Console.WriteLine("Constructor Empleado");
+            totalEmpleados++;
+            this.Dni = _Dni;
+            this.Salario = _Salario;
         }
         public string Nombre { get; set; }
         public string Cargo { get; set; }
-        public string Dni { get; set; }
-        public double Salario { get; set; }
+        public string Dni { get; private set; }
+        public double Salario { get; protected set; }
 
-       //private int Tipo { get; set; }
+        //private int Tipo { get; set; }
 
-        public virtual double obtenerBonificacion()
+        public static int totalEmpleados { get; set; }
+
+        public abstract double obtenerBonificacion();
+
+        public virtual void aumentarSalario()
         {
-            return this.Salario * 0.1;
+            this.Salario *= 1.10;
         }
        
     }

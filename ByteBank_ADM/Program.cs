@@ -3,32 +3,31 @@
 using ByteBank_ADM.Empleados;
 using ByteBank_ADM.Directores;
 using ByteBank_ADM.utils;
+using ByteBank_ADM.Administrativo;
+using ByteBank_ADM.Analista;
+using ByteBank_ADM.Logistica;
 
 AdminBonificacion admBonificacion = new AdminBonificacion();
 
-Empleado empleado = new Empleado();
-empleado.Nombre = "Leonardo José";
-empleado.Dni = "8001879";
-empleado.Cargo = "Desarrollador";
-empleado.Salario = 10000;
+Administrativo mariaRivas = new Administrativo("7384783");
+Console.WriteLine("Bonificacion administrativo: " + mariaRivas.obtenerBonificacion());
+admBonificacion.Registrar(mariaRivas);
 
-admBonificacion.Registrar(empleado);
+Analista pedroPerez = new Analista("5435454");
+Console.WriteLine("Bonificacion analista: " + pedroPerez.obtenerBonificacion());
+admBonificacion.Registrar(pedroPerez);
 
-Console.WriteLine("Nombre Empleado: " + empleado.Nombre);
-Console.WriteLine("Salario: " + empleado.Salario);
-Console.WriteLine("Bonificacion: " + empleado.obtenerBonificacion());
+Logistica juanCarrero = new Logistica("515115");
+Console.WriteLine("Bonificacion logistica: " + juanCarrero.obtenerBonificacion());
+admBonificacion.Registrar(juanCarrero);
 
-Director director = new Director();
-director.Nombre = "Diego Alejandro";
-director.Dni = "81778815";
-director.Cargo = "Director de Finanzas";
-director.Salario = 100000;
+Director leandroBusto = new Director("989844");
+Console.WriteLine("Bonificacion director: " + leandroBusto.obtenerBonificacion());
+admBonificacion.Registrar(leandroBusto);
 
-admBonificacion.Registrar(director);
-
-Console.WriteLine("Nombre Empleado: " + director.Nombre);
-Console.WriteLine("Salario: " + director.Salario);
-Console.WriteLine("Bonificacion: " + director.obtenerBonificacion());
 
 Console.WriteLine("Total bonificaciones: " +
                     admBonificacion.obtenerTotalBonificaciones());
+
+
+
