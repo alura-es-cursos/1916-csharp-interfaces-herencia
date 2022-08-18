@@ -9,7 +9,7 @@ namespace ByteBank_ADM.SistemaAutenticacion
 {
     public class SistemaAutenticacion
     {
-        public void loginUsuario(Autenticable autenticable, string clave)
+        public void loginUsuario(IAutenticable autenticable, string clave)
         {
             if (autenticable.autenticarUsuario(clave))
             {

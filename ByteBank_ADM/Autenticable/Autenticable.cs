@@ -7,17 +7,10 @@ using System.Threading.Tasks;
 
 namespace ByteBank_ADM.Autenticables
 {
-    public abstract class Autenticable:Empleado
+    public interface IAutenticable
     {
-        public Autenticable(string _Dni, double _Salario) : base(_Dni, _Salario)
-        {
-        }
 
-        public string Clave { get; set; }
-        public bool autenticarUsuario(string clave)
-        {
-            return this.Clave == clave;
-        }
+        public bool autenticarUsuario(string clave);
 
     }
 }

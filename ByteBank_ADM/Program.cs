@@ -7,6 +7,7 @@ using ByteBank_ADM.Administrativo;
 using ByteBank_ADM.Analistas;
 using ByteBank_ADM.Logistica;
 using ByteBank_ADM.SistemaAutenticacion;
+using ByteBank_ADM.SocioComerciales;
 
 AdminBonificacion admBonificacion = new AdminBonificacion();
 SistemaAutenticacion sysAutenticacion = new SistemaAutenticacion();
@@ -35,7 +36,10 @@ Console.WriteLine("Autenticando a Leandro Busto");
 leandroBusto.Clave = "1234";
 sysAutenticacion.loginUsuario(leandroBusto, "clave");
 
-
+SocioComercial luisRivas = new SocioComercial();
+luisRivas.Clave = "333";
+Console.WriteLine("Autenticando a Luis Rivas (Socio)");
+sysAutenticacion.loginUsuario(luisRivas, "333");
 //Console.WriteLine("Total bonificaciones: " +
 //                    admBonificacion.obtenerTotalBonificaciones());
 

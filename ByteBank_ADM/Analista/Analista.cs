@@ -1,4 +1,6 @@
 ﻿using ByteBank_ADM.Autenticables;
+using ByteBank_ADM.EmpleadoAutenticables;
+using ByteBank_ADM.Empleados;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ByteBank_ADM.Analistas
 {
-    public class Analista:Autenticable
+    public class Analista: EmpleadoAutenticable, IAutenticable
     {
         public Analista(string _Dni) : base(_Dni, 30000)
         {
