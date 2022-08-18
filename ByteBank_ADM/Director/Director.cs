@@ -1,4 +1,4 @@
-﻿using ByteBank_ADM.Empleados;
+﻿using ByteBank_ADM.Autenticables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ByteBank_ADM.Directores
 {
-    public class Director:Empleado
+    public class Director:Autenticable
     {
         public Director(string _Dni):base(_Dni, 50000)
         {
@@ -26,5 +26,7 @@ namespace ByteBank_ADM.Directores
         {
             this.Salario *= 1.05;
         }
+
+        
     }
 }

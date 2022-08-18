@@ -25,12 +25,16 @@ namespace ByteBank_ADM.Empleados
 
         public static int totalEmpleados { get; set; }
 
+        
+
         public abstract double obtenerBonificacion();
 
         public virtual void aumentarSalario()
         {
             this.Salario *= 1.10;
         }
-       
+
+        
+
     }
 }
